@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Blockchain Document Timestamping</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <h1 class="title"> Document Verification</h1>
+
+    <input type="file" id="fileInput" />
+    <div class="buttons">
+      <button onclick="clearHistory()" class="clear-history-btn"> Clear History</button>
+      <button onclick="connectWallet()">Connect Wallet</button>
+      <button onclick="checkDocument()"> Verify Document</button>
+    </div>
+
+    <p id="result" class="result"></p>
+    <div id="history" class="history-section">
+    <h3> Verification History</h3>
+    <ul id="historyList"></ul>
+    </div>
+
+    <img id="statusImage" class="status-img" src="" alt="Result Image" style="display: none;" />
+
+    <footer>
+      <p class="developer">Developed by <span class="name">Cinchana C K</span></p>
+    </footer>
+  </div>
+</body>
+</html>
